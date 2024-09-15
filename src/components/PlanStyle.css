@@ -1,0 +1,79 @@
+.trip-form-container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  p {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  label {
+    display: inline-block; /* changed from block to inline-block */
+    margin-bottom: 5px;
+    font-weight: bold;
+    width: 45%; /* added width to make them equal */
+    text-align: left;
+  }
+  
+  .date-labels {
+    display: flex; /* added flexbox to align labels horizontally */
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .date-labels label {
+    width: 45%; /* added width to make them equal */
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="number"],
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  
+  button[type="submit"] {
+    background-color: #01959a;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #015659;
+  }
+  .recommendations {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  }
+  @media (max-width: 1200px) {
+    .recommendations {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .recommendations {
+      grid-template-columns: 1fr;
+    }
+  }
+  
